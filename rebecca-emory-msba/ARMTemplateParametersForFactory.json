@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "rebecca-emory-msba"
+		},
+		"blb_msba_source_connectionString": {
+			"value": ""
+		},
+		"rebecca_msba_db_connectionString": {
+			"value": ""
+		},
+		"blb_msba_storage2_connectionString": {
+			"value": ""
+		}
+	}
+}
