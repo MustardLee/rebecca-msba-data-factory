@@ -38,6 +38,176 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ID Number",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "id_number",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "type",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Commodity",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "commodity",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "BOL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BOL",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Origin City",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_city",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Origin State",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_state",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Origin Zip",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_zip",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Destination Zip",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "destination_zip",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Mode",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mode",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": " Weight ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "weight",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Freight Class",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "freight_class",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Pallets",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "pallets",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Ship Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ship_date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Invoice Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "invoice_date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
