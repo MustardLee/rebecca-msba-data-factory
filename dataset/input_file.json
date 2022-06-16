@@ -1,0 +1,44 @@
+{
+	"name": "input_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blb_msba_storage2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
+				"container": "msbasource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Worker_Ref_ID",
+				"type": "String"
+			},
+			{
+				"name": "Bonus_Date",
+				"type": "String"
+			},
+			{
+				"name": "Bonus_Amount",
+				"type": "String"
+			}
+		]
+	}
+}

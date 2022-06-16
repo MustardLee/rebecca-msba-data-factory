@@ -1,0 +1,21 @@
+{
+	"name": "get_metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blb_msba_storage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "msbasource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
